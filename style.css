@@ -1,0 +1,62 @@
+/* General Body Style */
+body {
+    font-family: 'Horror Finders', cursive;
+    background-color: #1b1b1b;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+/* Container for the Timer */
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    transform: rotate(-2deg);
+}
+
+/* Countdown Text Style */
+#countdown {
+    font-size: 2.5em;
+    margin-top: 20px;
+    animation: flicker 1.5s infinite;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: crimson;
+    text-shadow: 0 0 10px red, 0 0 20px crimson, 0 0 30px darkred;
+    margin-bottom: 40px;
+}
+
+/* Creepy message */
+.creepy-msg {
+    font-size: 1.5em;
+    font-style: italic;
+    margin-top: 40px;
+    color: gray;
+    text-shadow: 0 0 10px red, 0 0 15px crimson;
+    animation: shake 3s infinite;
+}
+
+/* Countdown Animation */
+@keyframes flicker {
+    0% { opacity: 1; }
+    25% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+    75% { opacity: 0.1; }
+    100% { opacity: 1; }
+}
+
+/* Shake Animation for Text */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
